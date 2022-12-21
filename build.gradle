@@ -35,6 +35,7 @@ dependencies {
 	implementation fileTree(dir: '/lib', include: ['ojdbc8.jar'])
 	
 }
+test { exclude '**/*' }
 
 tasks.named('test') {
 	useJUnitPlatform()
